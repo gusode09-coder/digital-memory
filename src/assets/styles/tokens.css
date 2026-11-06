@@ -1,0 +1,195 @@
+/* ===========================================================
+   Design Tokens — Digital Memory Box for Partner
+   Warm, romantic, intimate palette. No purple/indigo.
+   =========================================================== */
+
+:root {
+  /* ---- Color ramps ---- */
+  /* Primary — Rose (romantic, warm) */
+  --color-primary-50:  #fdf2f4;
+  --color-primary-100: #fbe5e9;
+  --color-primary-200: #f7c9d3;
+  --color-primary-300: #f19eaf;
+  --color-primary-400: #e86a82;
+  --color-primary-500: #d94060;
+  --color-primary-600: #c42a51;
+  --color-primary-700: #a31f42;
+  --color-primary-800: #821c3b;
+  --color-primary-900: #6b1a36;
+
+  /* Secondary — Teal (complementary calm) */
+  --color-secondary-50:  #effbf9;
+  --color-secondary-100: #d6f5f0;
+  --color-secondary-200: #b0ebe3;
+  --color-secondary-300: #7adace;
+  --color-secondary-400: #45c1b5;
+  --color-secondary-500: #21a59a;
+  --color-secondary-600: #15847c;
+  --color-secondary-700: #136a64;
+  --color-secondary-800: #135551;
+  --color-secondary-900: #114845;
+
+  /* Accent — Gold (warm highlight) */
+  --color-accent-50:  #fffbeb;
+  --color-accent-100: #fef3c7;
+  --color-accent-200: #fce58a;
+  --color-accent-300: #f9cf4b;
+  --color-accent-400: #f5b821;
+  --color-accent-500: #e09a0f;
+  --color-accent-600: #c2790b;
+  --color-accent-700: #9a5a0c;
+  --color-accent-800: #7c4911;
+  --color-accent-900: #663c12;
+
+  /* Success */
+  --color-success-50:  #edfdf5;
+  --color-success-100: #d3fae8;
+  --color-success-200: #a9f3d0;
+  --color-success-300: #6ee7b4;
+  --color-success-400: #34d399;
+  --color-success-500: #10b981;
+  --color-success-600: #059669;
+  --color-success-700: #047857;
+  --color-success-800: #065f46;
+  --color-success-900: #064e3b;
+
+  /* Warning */
+  --color-warning-50:  #fff8eb;
+  --color-warning-100: #feeebd;
+  --color-warning-200: #fddc7a;
+  --color-warning-300: #fcc63a;
+  --color-warning-400: #fbb317;
+  --color-warning-500: #f5930a;
+  --color-warning-600: #d97606;
+  --color-warning-700: #b45609;
+  --color-warning-800: #92450c;
+  --color-warning-900: #78390f;
+
+  /* Error */
+  --color-error-50:  #fef3f2;
+  --color-error-100: #fee4e2;
+  --color-error-200: #fecdca;
+  --color-error-300: #fda29b;
+  --color-error-400: #f97066;
+  --color-error-500: #f04438;
+  --color-error-600: #d92d20;
+  --color-error-700: #b42318;
+  --color-error-800: #912018;
+  --color-error-900: #7a271a;
+
+  /* Neutral — Warm stone */
+  --color-neutral-0:   #ffffff;
+  --color-neutral-50:  #faf8f6;
+  --color-neutral-100: #f4f0ea;
+  --color-neutral-200: #e8e1d6;
+  --color-neutral-300: #d6ccbb;
+  --color-neutral-400: #b8aa93;
+  --color-neutral-500: #98886f;
+  --color-neutral-600: #7a6c55;
+  --color-neutral-700: #5e5343;
+  --color-neutral-800: #3f372c;
+  --color-neutral-900: #2a241b;
+  --color-neutral-950: #1a160f;
+
+  /* ---- Semantic ---- */
+  --bg: var(--color-neutral-50);
+  --bg-elevated: var(--color-neutral-0);
+  --bg-muted: var(--color-neutral-100);
+  --text: var(--color-neutral-900);
+  --text-muted: var(--color-neutral-600);
+  --text-subtle: var(--color-neutral-500);
+  --border: var(--color-neutral-200);
+  --border-strong: var(--color-neutral-300);
+
+  --brand: var(--color-primary-500);
+  --brand-hover: var(--color-primary-600);
+  --brand-soft: var(--color-primary-50);
+  --brand-contrast: var(--color-neutral-0);
+
+  /* ---- Typography ---- */
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.5rem;
+  --fs-3xl: 1.875rem;
+  --fs-4xl: 2.5rem;
+  --fs-5xl: 3.25rem;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --lh-tight: 1.2;
+  --lh-snug: 1.35;
+  --lh-body: 1.6;
+
+  /* ---- Spacing (8px system) ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* ---- Radius ---- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* ---- Shadows ---- */
+  --shadow-xs: 0 1px 2px rgba(42, 36, 27, 0.05);
+  --shadow-sm: 0 2px 6px rgba(42, 36, 27, 0.07);
+  --shadow-md: 0 6px 16px rgba(42, 36, 27, 0.1);
+  --shadow-lg: 0 14px 32px rgba(42, 36, 27, 0.14);
+  --shadow-glow: 0 0 0 4px var(--color-primary-100);
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 150ms;
+  --dur: 250ms;
+  --dur-slow: 400ms;
+
+  /* ---- Layout ---- */
+  --container: 1120px;
+  --container-narrow: 720px;
+  --header-h: 72px;
+  --footer-h: auto;
+  --z-base: 1;
+  --z-sticky: 100;
+  --z-overlay: 1000;
+  --z-modal: 1100;
+}
+
+/* ---- Dark mode (optional, follows system) ---- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--color-neutral-900);
+    --bg-elevated: #34291f;
+    --bg-muted: #2a241b;
+    --text: var(--color-neutral-100);
+    --text-muted: var(--color-neutral-300);
+    --text-subtle: var(--color-neutral-400);
+    --border: #4a3f31;
+    --border-strong: #5e5343;
+    --brand-soft: rgba(217, 64, 96, 0.14);
+    --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.45);
+    --shadow-lg: 0 14px 32px rgba(0, 0, 0, 0.55);
+  }
+}
